@@ -35,6 +35,14 @@
         font-family: var(--font-lexa);
     }
 
+    h1{
+        color: var(--clr-white);
+    }
+
+    span{
+        color: var(--clr-violet);
+    }
+
     h2{
         color: var(--clr-white-statHeading);
     }
@@ -48,6 +56,8 @@
 
     body{
         background-color: var(--clr-darkBlue);
+        display: grid;
+        place-items: center;
 
     }
 
@@ -56,3 +66,44 @@
         height: auto;
         width: 100%;
     }
+
+
+    /* -----Styling--------  */
+    .card{
+        background-color: var(--clr-desBlue);
+        margin: 4.375rem 0;     
+        min-height: 26.67rem;
+        border-radius: 0.67rem;
+        display: flex;
+    }
+
+    .card-right{
+        width: 50%;
+        height: auto;
+        background-image: url(./images/image-header-desktop.jpg);
+        border-radius: 0 0.67rem 0.67rem 0;
+        
+    }
+
+    .overlay{
+        position: relative; /* Sit on top of the page content */
+        display: inherit; /* Hidden by default */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--clr-violet); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        opacity: 0.4;
+        border-radius: inherit;
+    }
+
+    .card-left{
+        width: 50%;
+    }
+
+
+
