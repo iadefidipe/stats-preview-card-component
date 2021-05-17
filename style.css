@@ -33,19 +33,23 @@
 
     h1,h2{
         font-family: var(--font-lexa);
+        color: var(--clr-white);
     }
 
     h1{
-        color: var(--clr-white);
+        font-size: 2rem;
     }
+
+    h2{
+        font-size: 1rem;
+    }
+
 
     span{
         color: var(--clr-violet);
     }
 
-    h2{
-        color: var(--clr-white-statHeading);
-    }
+    
 
     p{
         color: var(--clr-white-mainParagragh);
@@ -102,8 +106,26 @@
     }
 
     .card-left{
+        margin: auto 0;
         width: 50%;
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
+
+    .main-paragraph{
+        width: 80%;
+    }
+
+    .stats{
+        margin-top: 3rem;
+        display: flex;
+        gap: 3.5rem;
+        text-align: left;
+    }
+
+    
 
 
 
